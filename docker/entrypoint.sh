@@ -74,10 +74,7 @@ if [[ "$TELEMETRY" == "true" && ( "$MODE" == "frontend" || "$MODE" == "standalon
   fi
 
   mkdir -p /database/
-  chown www-data /database/
 fi
-
-chown -R www-data /var/www/html/*
 
 # Allow selection of Apache port for network_mode: host
 if [ "$WEBPORT" != "80" ]; then
